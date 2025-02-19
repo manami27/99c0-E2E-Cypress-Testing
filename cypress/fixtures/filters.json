@@ -1,0 +1,59 @@
+{
+  "buyFilters": ["Price range", "Property type", "Bedrooms"],
+  "rentFilters": ["Price range", "Property type", "Bedrooms", "Rental type"],
+  "buy": {
+    "price": ["$100,000", "$500,000"],
+    "propertyTypes": ["All", "HDB", "Condo", "Resale", "New Launch", "Landed"],
+    "selectedTypes": ["HDB", "Condo"],
+    "bedroomOptions": [
+      "All",
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom",
+      "3 Bedroom",
+      "4 Bedroom",
+      "5+ Bedroom"
+    ],
+    "bedroom": ["Studio", "1 Bedroom", "3 Bedroom"],
+    "roomMapping": {
+      "Studio": 0,
+      "1 Bedroom": 1,
+      "2 Bedroom": 2,
+      "3 Bedroom": 3,
+      "4 Bedroom": 4,
+      "5+ Bedroom": 5
+    }
+  },
+  "rent": {
+    "price": ["$1,000", "$5,000"],
+    "propertyTypes": ["All", "HDB", "Condo", "Landed"],
+    "selectedTypes": ["HDB", "Condo"],
+    "bedroomOptions": [
+      "All",
+      "Studio",
+      "1 Bedroom",
+      "2 Bedroom",
+      "3 Bedroom",
+      "4 Bedroom",
+      "5+ Bedroom"
+    ],
+    "bedroom": ["Studio", "1 Bedroom"],
+    "roomMapping": {
+      "Studio": 0,
+      "1 Bedroom": 1,
+      "2 Bedroom": 2,
+      "3 Bedroom": 3,
+      "4 Bedroom": 4,
+      "5+ Bedroom": 5
+    },
+    "rentalTypes": ["Entire unit", "Room", "Master room", "Common room"],
+    "selectedUnitTypes": ["Entire unit", "Room"],
+    "selectedRoomTypes": ["Master room", "Common room"],
+    "unitMapping": {
+      "Entire unit": "unit",
+      "Room": "room",
+      "Master room": "master",
+      "Common room": "common"
+    }
+  }
+}

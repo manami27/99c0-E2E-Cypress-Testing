@@ -1,0 +1,34 @@
+{
+  "h2Titles": [
+    { "title": "Featured projects", "selector": ".bygYT > .LyNqn > ._1__lJ" },
+    {
+      "title": "Popular projects",
+      "selector": "section:nth-of-type(2) > .LyNqn > ._1__lJ"
+    },
+    {
+      "title": "Find your property value instantly",
+      "selector": ".ilQv1 > .yMCxv"
+    },
+    {
+      "title": "Listings with videos",
+      "selector": "[data-cy='listingsWithVideos'] > .LyNqn > ._1__lJ"
+    },
+    {
+      "title": "Popular listings",
+      "selector": "[data-cy='popularListings'] > .LyNqn > ._1__lJ"
+    },
+    {
+      "title": "Featured stories",
+      "selector": "._1HRcV > ._2tvJd"
+    },
+    {
+      "title": "Listings found only on 99",
+      "selector": "[data-cy='listingsFoundOnlyOn99'] > .LyNqn > ._1__lJ"
+    },
+    {
+      "title": "Latest New Launches",
+      "selector": ".XbGF9 > :nth-child(1) > .yMCxv"
+    },
+    { "title": "Explore 99.co", "selector": "header > ._1zGm8" }
+  ]
+}

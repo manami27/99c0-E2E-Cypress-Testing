@@ -1,45 +1,85 @@
-# 99 Interview Cypress
+# 99.co Website - Cypress E2E Testing
 
-This repo is created to provide the tech challenge for any QA candidates.
+## 📌 Overview
 
-## How to set up
+This repository contains automated end-to-end (E2E) tests for **99.co Website** using Cypress. The tests cover various search filters, property types, price ranges, and rental options, ensuring a seamless and bug-free experience.
 
-If you have issues, please go to [Cypress' Guide to Installing Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress) and follow the instructions provided in the documentation. The steps will differ depending on your OS. However, the steps below will generally work for Windows/Mac/Linux.
+## 🚀 Features
 
-1. Install [NodeJs](https://nodejs.org/en/download/) & [npm](https://www.npmjs.com/get-npm) if you do not have them. You can check if you have them installed by running
+- **Cypress + Page Object Model (POM)** for better maintainability
+- **Headless Mode Execution** for fast and efficient testing
+- **Reusable Fixtures & Commands** to streamline test cases
+- **GitHub Actions Integration** for automated test execution
+- **Comprehensive Test Coverage** for buy & rent filters
 
-   ```
-   node --version
-   npm --version
-   ```
+## 🛠️ Setup Instructions
 
-2. After ensuring you have NodeJs & npm installed, clone this repo into your intended directory, e.g.
-   ```
-   C:\Users\QACandidate\99-interview-cypress
-   ```
-3. From within the `99-interview-cypress` directory, run the command
-   ```
-   npm install
-   ```
+### 1️⃣ Prerequisites
 
-## How to use the Cypress test runner
+Ensure you have the following installed:
 
-All of the following information is documented in [Cypress/Core Concepts - The Test Runner](https://docs.cypress.io/guides/core-concepts/test-runner.html#Overview).
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [Cypress](https://www.cypress.io/)
+- Git
 
-1. Cypress runs tests in a unique interactive runner that allows you to see commands as they execute while also viewing the application under test.
+### 2️⃣ Clone the Repository
 
-2. To open the test runner, run the following command in your directory:
-   ```
-   npx cypress open
-   ```
-   There will be some text concerning your first time using Cypress if it opens successfully.
+```sh
+git clone https://github.com/manami27/99co-Cypress-Test-Suite.git
+cd your-repo-name
+```
 
-## Tech challenge rules
+### 3️⃣ Install Dependencies
 
-- Please code out your answers in
-  ```
-  cypress/e2e/WebSuite1.cy.js
-  cypress/e2e/WebSuite2.cy.js
-  cypress/e2e/WebSuite3.cy.js
-  ```
-- Do not use any 3rd party libraries or plugins for the tech challenge. The Cypress built-in library is sufficient to complete the task.
+```sh
+npm install
+```
+
+## 🔍 Running Tests
+
+### Run Cypress in Headless Mode
+
+```sh
+npm test
+```
+
+This runs all test files inside `cypress/e2e/` using Electron in headless mode.
+
+### Run Cypress in Interactive Mode
+
+```sh
+npx cypress open
+```
+
+This opens the Cypress test runner, where you can manually run and debug tests.
+
+## 🎯 Folder Structure
+
+```
+📂 cypress
+ ├── 📂 e2e            # Test cases
+ ├── 📂 fixtures       # Test data (JSON)
+ ├── 📂 pageObjects    # Page Object Model (POM) structure
+ ├── 📂 support        # Custom Cypress commands
+ ├── 📂 plugins        # Plugin configurations
+```
+
+## 🏗️ GitHub Actions
+
+This repository supports **manual GitHub Actions trigger** to execute tests. Navigate to **Actions** in your GitHub repo and trigger a new run.
+
+## 💡 Contributing
+
+1. Fork this repository
+2. Create a new branch: `git checkout -b feature-branch`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push the branch: `git push origin feature-branch`
+5. Open a pull request
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+💡 **Happy Testing! 🚀**
